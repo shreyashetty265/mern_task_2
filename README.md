@@ -65,7 +65,7 @@ backend/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/trashika112/Mern-task-2.git
+git clone https://github.com/shreyashetty265/mern_task_2.git
 cd Mern-task-2/backend
 ```
 
@@ -117,5 +117,5 @@ npm start
 
 ## **Credits**
 
-This project was **developed by Trashika S Karkera**.
+This project was **developed by Shreya Shetty**.
 
