@@ -1,0 +1,198 @@
+/* ===========================  
+   Global Styles  
+=========================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #10151f, #1b2334);
+  color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+  color: #4dd0e1;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================  
+   Navbar  
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 2.3rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ff6e6e;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: 500;
+}
+
+.navbar button:hover {
+  background: #ff4c4c;
+}
+
+/* ===========================  
+   Card Container (Login / Signup)  
+=========================== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  padding: 2.5rem 3rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  color: #4dd0e1;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.card input:focus {
+  border-color: #4dd0e1;
+  box-shadow: 0 0 8px rgba(77, 208, 225, 0.5);
+}
+
+.card button {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #4dd0e1, #26c6da);
+  color: #10151f;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, #26c6da, #00bcd4);
+}
+
+.card .message {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #ff6e6e;
+}
+
+.card .link {
+  margin-top: 1rem;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+/* ===========================  
+   Home Page  
+=========================== */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+.home-title {
+  color: #4dd0e1;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-message {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  padding: 0.9rem 1.2rem;
+  background: #ff6e6e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #ff4c4c;
+}
+
+/* ===========================  
+   Responsive  
+=========================== */
+@media (max-width: 500px) {
+  .card, .home-card {
+    padding: 1.7rem 1.5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
